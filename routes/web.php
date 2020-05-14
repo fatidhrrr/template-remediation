@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Template
+
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/menu', 'MenuController@index')->name('menu');
+
+Route::get('/about', 'AboutController@index')->name('about');
+
+Route::get('/contact', 'ContactController@index')->name('contact');

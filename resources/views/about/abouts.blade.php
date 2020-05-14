@@ -2,19 +2,13 @@
 
 @section('content')
 
-    {{-- Home --}}
-
     @include('home/nav')
 
-    @include('/home/slider')
-
-    @include('/home/menu')
-
-    @include('/home/feature')
+    @include('/about/header')
 
     @include('/home/about')
 
-    @include('/home/video')
+    @include('/about/gallery')
 
     @include('home/testimonial')
  
